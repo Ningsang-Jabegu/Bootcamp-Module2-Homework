@@ -60,4 +60,4 @@ This script displays the current local time on the homepage. The time is updated
 This project was created as part of an educational assignment at Westcliff University. All contents are for educational purposes only and are not intended for commercial use.
 
 ## License
-This project is licensed under the MIT License. See the (LICENSE.md)[https://github.com/Ningsang-Jabegu/Bootcamp-Module2-Homework?tab=MIT-1-ov-file] file for more details.
+This project is licensed under the MIT License. See the [LICENSE.md](https://github.com/Ningsang-Jabegu/Bootcamp-Module2-Homework?tab=MIT-1-ov-file) file for more details.
