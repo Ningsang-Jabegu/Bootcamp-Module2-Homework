@@ -46,7 +46,7 @@ This script displays the current local time on the homepage. The time is updated
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/Ningsang-Jabegu/Bootcamp-Module1-Homework.git
+   git clone https://github.com/Ningsang-Jabegu/Bootcamp-Module2-Homework.git
 
 2. **Open `index.html` in your browser:**
 - The homepage introduces California's greatest cliffs and displays a live digital clock.
