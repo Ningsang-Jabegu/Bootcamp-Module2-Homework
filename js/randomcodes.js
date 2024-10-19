@@ -1,5 +1,5 @@
 // Function to generate a combination of characters
-const generateCode = () => {
+export const generateCode = () => {
     const str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$';
     let code = '';
     for (let i = 0; i < 8; i++) {
@@ -9,12 +9,8 @@ const generateCode = () => {
     return code;
 };
 
-// Display generated code
-document.getElementById("codes").innerHTML = generateCode();
-
 // Function to enable/disable button
-const disableButton = (btnvalue) => {
-    const submitButton = document.getElementById("submit");
+export const disableButton = (btnvalue, submitButton) => {
     submitButton.disabled = btnvalue;
     if (btnvalue) {
         submitButton.style.backgroundColor = "rgba(73, 119, 209, 0.3)";
@@ -24,19 +20,3 @@ const disableButton = (btnvalue) => {
         submitButton.style.color = "rgba(255, 255, 255, 1)";
     }
 };
-
-// Listen to user input code
-const codebox = document.getElementById("codeentered");
-codebox.addEventListener("input", evaluateCode);
-
-// Function to evaluate entered code
-const evaluateCode = () => {
-    const getCode = document.getElementById("codeentered").value.trim();
-    const generatedCode = document.getElementById("codes").innerHTML.trim();
-    if (getCode.length === generatedCode.length && getCode === generatedCode) {
-        disableButton(false);
-    }
-};
-
-// Initialize button state
-disableButton(true);
