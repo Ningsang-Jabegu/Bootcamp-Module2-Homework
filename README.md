@@ -70,3 +70,6 @@ This project was created as part of an educational assignment at Westcliff Unive
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE.md](https://github.com/Ningsang-Jabegu/Bootcamp-Module2-Homework?tab=MIT-1-ov-file) file for more details.
+
+## Live Demo
+Check out the live version of the project at [Bootcamp Module 2 Homework](https://bootcamp-module2-homework.vercel.app/)
