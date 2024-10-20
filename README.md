@@ -29,6 +29,7 @@ _First updated: July 27, 2021 (Jointly uploaded on [Bootcamp-Module1-Homework](h
 
 - **CSS Files:**
   - `style.css`: Styles the entire website, including layout, typography, and responsiveness.
+  -  `normalize.css` : This css file makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalizing.
 
 ## Key Features
 
