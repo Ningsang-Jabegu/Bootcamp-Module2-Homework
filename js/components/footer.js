@@ -9,7 +9,7 @@ export function loadFooter() {
   const nonDisclaimerDiv = div({ id: "nondisclaimer" });
 
   // Create the copyright information div
-  const copyDiv = div({ className: "copy", textContent: "© Copyright 2020 :: bootcamp-module2-homework.vercel.app" });
+  const copyDiv = div({ className: "copy", textContent: "© Copyright 2020 : Ningsang Jabegu : bootcamp-module2-homework.vercel.app" });
 
   // Create the social media links div
   const socialDiv = div({ className: "social" });

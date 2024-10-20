@@ -23,7 +23,6 @@ export function loadHeader(activePage) {
 
   logoDiv.appendChild(logoImg);
   mainHeader.appendChild(logoDiv);
-  headerElement.appendChild(mainHeader);
 
   const navElement = nav({
     className: "main-menu",
@@ -47,7 +46,9 @@ export function loadHeader(activePage) {
   });
 
   navElement.appendChild(ulElement);
-  headerElement.appendChild(navElement);
+  mainHeader.appendChild(navElement); // Append navElement to mainHeader
+
+  headerElement.appendChild(mainHeader);
 
   const clockDiv = div({ id: "clock", textContent: currentTime() });
   setInterval(() => {

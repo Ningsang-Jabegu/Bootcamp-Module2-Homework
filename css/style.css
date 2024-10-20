@@ -1,12 +1,24 @@
+/* Poppins, Mettiweather, and Roboto font*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Poppins', sans-serif; */
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+}
 /* Header */
 header {
     width: 100%;
     min-height: 400px;
-    padding-top: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
 }
 
@@ -31,18 +43,22 @@ header {
 }
 
 .main-header {
-    background-color: rgba(255, 255, 255, 0.8);
-    width: 700px;
-    margin: 2em auto 0 auto;
+    background-color: rgba(255, 255, 255, 0.801);
+    min-width: 700px;
     min-height: 100px;
-    height: 100px;
+    max-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 2px 20px rgba(26, 1, 29, 0.473);
+    overflow: hidden;
+    font-family: 'Merriweather', sans-serif;
+    border-radius: 10px;
 }
 
 .main-header .logo img {
     width: 100px;
     height: 100px;
-    margin: 0 2em 0 0;
-    float: left;
+    /* display: inline-block; */
 }
 
 #clock {
@@ -59,24 +75,29 @@ header {
 
 /* Navigation */
 .main-menu {
-    margin-left: 30.7em;
-    margin-top: -7.26em;
+    /* margin-top: -7.26em; */
     font-weight: 400;
 }
 
 .main-menu ul li {
     list-style-type: none;
     display: inline-block;
-    padding: 0 25px;
     border-left: 1px solid rgba(202, 204, 202, 0.6);
     line-height: 100px;
     text-transform: uppercase;
     font-size: 14px;
+    text-align: center;
 }
 
 .main-menu ul li a {
     text-decoration: none;
     color: #888;
+    display: inline-block;
+    height: 100px;
+    width: 130px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 12pt;
 }
 
 .main-menu ul li a:hover {
@@ -84,7 +105,8 @@ header {
 }
 
 .main-menu ul li.active {
-    background: #9ed034;
+    background: linear-gradient(0deg, rgb(188, 139, 251) 0%, rgb(118, 184, 245) 100%);
+    /* box-shadow: inset 2px 2px 10px 1px rgba(0, 0, 0, 0.322); */
     border: none;
 }
 
@@ -111,9 +133,7 @@ header {
 }
 
 /* Main */
-main, .contact {
-    font-family: Arial, Helvetica, sans-serif;
-}
+
 
 h1 {
     color: #9ed034;
@@ -133,8 +153,13 @@ section:not(section.contactinfo, section.images) {
 }
 
 section #partners {
-    width: 1200px;
+    width: 100%;
     padding: 2em 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
     text-align: center;
 }
@@ -144,7 +169,8 @@ section #partners .partner {
     margin: 0 0.75em;
     padding: 1.3em 1.5em;
     background-color: #fff;
-    border-radius: 50%;
+    border-radius: 100%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.432), inset 1px 1px 2px rgba(0, 0, 0, 0.658);
 }
 
 section #partners .partner img {
@@ -155,25 +181,41 @@ section #partners .partner img {
 /* Footer */
 footer {
     width: 100%;
-    height: 155px;
-    padding-bottom: 1em;
     background-color: #ecfab8;
 }
 
 footer #nondisclaimer .copy {
-    padding: 3.5em 3.5em 3.5em 13em;
-    float: left;
+    /* padding: 3.5em 3.5em 3.5em 13em; */
+    /* float: left; */
+    text-align: center;
     font-size: 0.9em;
+    width: 70%;
 }
 
 footer #nondisclaimer .social {
     padding: 2.5em;
-    margin-right: 9.25em;
-    float: right;
+    /* margin-right: 9.25em; */
+    width:30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    /* float: right; */
 }
 
+footer #nondisclaimer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
 footer #disclaimer {
-    clear: both;
+    border-top: 1px solid #000;
+    padding: 1em 0;
 }
 
 footer #disclaimer p {
@@ -189,7 +231,7 @@ footer #nondisclaimer .social .fa {
     text-align: center;
     text-decoration: none;
     margin: 0 4px;
-    border-radius: 50%;
+    border-radius: 100%;
 }
 
 footer #nondisclaimer .social .fa:hover {
