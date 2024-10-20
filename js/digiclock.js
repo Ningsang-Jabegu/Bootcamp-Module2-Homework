@@ -1,4 +1,4 @@
-function currentTime() {
+export function currentTime() {
     const d = new Date();
     let hr = d.getHours();
     let min = d.getMinutes();
@@ -35,11 +35,12 @@ function currentTime() {
 
     // Assemble time format to display
     const time = `${hr}:${min}:${sec} ${ampm} ${timeZone}`;
-    document.getElementById("clock").innerText = time;
+    // document.getElementById("clock").innerText = time;
+    return time;
 }
 
-// Initial run of time date function
-currentTime();
+// // Initial run of time date function
+// currentTime();
 
-// Run time date function every 1 second
-setInterval(currentTime, 1000);
+// // Run time date function every 1 second
+// setInterval(currentTime, 1000);

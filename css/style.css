@@ -11,17 +11,22 @@ header {
 }
 
 #home header {
-    background: lightgray url(images/cliff_ocean.jpg) no-repeat;
+    background: lightgray url(../images/cliff_ocean.jpg) no-repeat;
+    background-size: cover;
+}
+
+#cliff header {
+    background: lightgray url(../images/forest_cliff.jpg) no-repeat;
     background-size: cover;
 }
 
 #activities header {
-    background: lightgray url(images/runfly.jpg) no-repeat;
+    background: lightgray url(../images/runfly.jpg) no-repeat;
     background-size: cover;
 }
 
 #contact header {
-    background: lightgray url(images/cliff_rock.jpg) no-repeat;
+    background: lightgray url(../images/cliff_rock.jpg) no-repeat;
     background-size: cover;
 }
 
@@ -318,6 +323,10 @@ label.dropdown {
     margin-top: 1em;
 }
 
+.selectmenu {
+    display: inline-flex;
+}
+
 .radios label {
     display: inline-flex;
 }
@@ -355,10 +364,6 @@ main {
 }
 
 /* Cliff */
-#cliff header {
-    background: lightgray url(images/forest_cliff.jpg) no-repeat;
-    background-size: cover;
-}
 
 img[alt~="North Cliff Mountains"] {
     height: 100px;

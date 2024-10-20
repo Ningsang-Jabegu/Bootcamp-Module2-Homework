@@ -1,4 +1,5 @@
 import { header, div, img, nav, ul, li, a } from "../html_tags.js";
+import { currentTime } from "../digiclock.js";
 
 export function loadHeader(activePage) {
   const menuItems = [
@@ -48,7 +49,10 @@ export function loadHeader(activePage) {
   navElement.appendChild(ulElement);
   headerElement.appendChild(navElement);
 
-  const clockDiv = div({ id: "clock" });
+  const clockDiv = div({ id: "clock", textContent: currentTime() });
+  setInterval(() => {
+    clockDiv.textContent = currentTime();
+  }, 1000);
   headerElement.appendChild(clockDiv);
 
   document.body.insertAdjacentElement("afterbegin", headerElement);
